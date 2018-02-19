@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://pathnext:uOVFCQn3!@ds041566.mlab.com:41566/testingpathnext"
+    }
+  }
+}

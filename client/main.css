@@ -1,0 +1,44 @@
+.vessel-map{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.vessel-map .vessel-marker {
+    width: 55px;
+}
+
+.vessel-map .vessel-marker span {
+    display: block;
+    position: relative;
+}
+
+/* workaround: using img tag as id field for materialize input autosuggest */
+ul li img {
+    opacity: 0;
+}
+
+.input-field {
+    height: auto;
+    padding: 0 13px 0 13px;
+    background-color: white;
+}
+
+.input-field input {
+    font-size: 1.34em;
+}
+
+.input-field label {
+    opacity: 0;
+}
+
+.center-text {
+    text-align: center !important;
+}
+
+.dropdown-content {
+    box-shadow: none !important;
+}

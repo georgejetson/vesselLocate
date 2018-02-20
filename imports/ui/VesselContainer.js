@@ -17,6 +17,7 @@ export default VesselContainer = withTracker(props => {
    // vesselList: vesselsExist ? vessels : [],
    searchValue: props.searchValue,
    searchSuggestions: vesselsExist ? vessels : [],
-   selectedVessel: props.selectedVessel
+   selectedVessel: props.selectedVessel,
+   toggleLaunchCondition: props.toggleLaunchCondition,
  }
 })(VesselUI)

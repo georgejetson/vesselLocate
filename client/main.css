@@ -42,3 +42,29 @@ ul li img {
 .dropdown-content {
     box-shadow: none !important;
 }
+
+.error-container,
+.launch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.89);
+}
+.error-message,
+.launch-message{
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-self: center;
+    font-size: 2em;
+    line-height: 1.13em;
+    padding: 13px 8px;
+}
+
+.error-message p,
+.launch-message p {
+    margin: 13px;
+}

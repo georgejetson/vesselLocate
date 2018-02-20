@@ -3,8 +3,8 @@ import { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { Icon } from 'react-materialize';
 
-const VesselMarker = ({ text }) => (
-  <div className="vessel-marker center-text">
+const VesselMarker = ({ text, style }) => (
+  <div className="vessel-marker center-text" style={style}>
     <Icon small>directions_boat</Icon>
     <span>{text}</span>
   </div>
@@ -26,6 +26,7 @@ export default class VesselMap extends Component {
           lat={this.props.selectedVesselCoordinates.lat}
           lng={this.props.selectedVesselCoordinates.lng}
           text={this.props.selectedVessel.name}
+          style={{display: this.props.launchCondition ? 'none' : 'block'}}
         />
       </GoogleMapReact>
     )

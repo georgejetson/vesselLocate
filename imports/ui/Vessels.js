@@ -24,10 +24,6 @@ export default class VesselUI extends Component {
     return _vesselAutocomplete;
   }
 
-  handleContentChange = (event, value ) => {
-    event.target.value = value.toUpperCase();
-  }
-
   handleVesselChange = (selectedOption) => {
     this.props.changeSelectedVessel(this.props.searchSuggestions.find( vessel => vessel.name === selectedOption ));
   }

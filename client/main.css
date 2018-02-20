@@ -25,6 +25,7 @@ ul li img {
     height: auto;
     padding: 0 13px 0 13px;
     background-color: white;
+    z-index: 1;
 }
 
 .input-field input {
